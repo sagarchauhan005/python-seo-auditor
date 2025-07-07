@@ -1,4 +1,4 @@
-#Python SEO Auditor
+## Python SEO Auditor
 
 A simple application that uses python libraries to scrape the data from URL and understands its SEO readiness
 
