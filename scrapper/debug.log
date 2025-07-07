@@ -1,0 +1,130 @@
+/home/sagar/PycharmProjects/django/scrapper/manage.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 5344
+"POST /api/audit HTTP/1.1" 200 1766
+/home/sagar/PycharmProjects/django/scrapper/seo_audit/services/seo_analyzer.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 5344
+"GET /static/style.css HTTP/1.1" 304 0
+"POST /api/audit HTTP/1.1" 200 1766
+/home/sagar/PycharmProjects/django/scrapper/seo_audit/services/seo_analyzer.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /api/audit HTTP/1.1" 200 1766
+/home/sagar/PycharmProjects/django/scrapper/seo_audit/services/seo_analyzer.py changed, reloading.
+Watching for file changes with StatReloader
+/home/sagar/PycharmProjects/django/scrapper/seo_audit/services/seo_analyzer.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /api/audit
+"POST /api/audit HTTP/1.1" 500 123
+/home/sagar/PycharmProjects/django/scrapper/seo_audit/services/seo_analyzer.py changed, reloading.
+Watching for file changes with StatReloader
+/home/sagar/PycharmProjects/django/scrapper/seo_audit/services/seo_analyzer.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /api/audit HTTP/1.1" 200 1766
+/home/sagar/PycharmProjects/django/scrapper/seo_audit/services/seo_analyzer.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /api/audit HTTP/1.1" 200 1766
+/home/sagar/PycharmProjects/django/scrapper/seo_audit/services/seo_analyzer.py changed, reloading.
+Watching for file changes with StatReloader
+/home/sagar/PycharmProjects/django/scrapper/seo_audit/services/seo_analyzer.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /api/audit HTTP/1.1" 200 1765
+/home/sagar/PycharmProjects/django/scrapper/seo_audit/services/seo_analyzer.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 5344
+"GET /static/style.css HTTP/1.1" 304 0
+"GET /static/script.js HTTP/1.1" 304 0
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2860
+/home/sagar/PycharmProjects/django/scrapper/seo_audit/services/seo_analyzer.py changed, reloading.
+Watching for file changes with StatReloader
+/home/sagar/PycharmProjects/django/scrapper/seo_audit/services/seo_analyzer.py changed, reloading.
+Watching for file changes with StatReloader
+/home/sagar/PycharmProjects/django/scrapper/seo_audit/services/seo_analyzer.py changed, reloading.
+Watching for file changes with StatReloader
+/home/sagar/PycharmProjects/django/scrapper/seo_audit/services/seo_analyzer.py changed, reloading.
+Watching for file changes with StatReloader
+/home/sagar/PycharmProjects/django/scrapper/seo_audit/services/seo_analyzer.py changed, reloading.
+Watching for file changes with StatReloader
+/home/sagar/PycharmProjects/django/scrapper/seo_audit/services/seo_analyzer.py changed, reloading.
+Watching for file changes with StatReloader
+/home/sagar/PycharmProjects/django/scrapper/seo_audit/services/seo_analyzer.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /api/audit HTTP/1.1" 200 1636
+"GET / HTTP/1.1" 200 5344
+"GET /static/style.css HTTP/1.1" 304 0
+"GET /static/script.js HTTP/1.1" 304 0
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/sagar/PycharmProjects/django/.venv/lib/python3.12/site-packages/django/template/base.py", line 510, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sagar/PycharmProjects/django/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sagar/PycharmProjects/django/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sagar/PycharmProjects/django/scrapper/seo_audit/views.py", line 12, in index
+    template = loader.get_template('index.html')
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sagar/PycharmProjects/django/.venv/lib/python3.12/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sagar/PycharmProjects/django/.venv/lib/python3.12/site-packages/django/template/backends/django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sagar/PycharmProjects/django/.venv/lib/python3.12/site-packages/django/template/engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sagar/PycharmProjects/django/.venv/lib/python3.12/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sagar/PycharmProjects/django/.venv/lib/python3.12/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sagar/PycharmProjects/django/.venv/lib/python3.12/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/home/sagar/PycharmProjects/django/.venv/lib/python3.12/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sagar/PycharmProjects/django/.venv/lib/python3.12/site-packages/django/template/base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/home/sagar/PycharmProjects/django/.venv/lib/python3.12/site-packages/django/template/base.py", line 512, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/sagar/PycharmProjects/django/.venv/lib/python3.12/site-packages/django/template/base.py", line 577, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 7: 'static'. Did you forget to register or load this tag?
+"GET / HTTP/1.1" 500 141921
+"GET / HTTP/1.1" 200 5344
+"GET /static/script.js HTTP/1.1" 304 0
+"GET / HTTP/1.1" 200 10776
+"GET /static/script.js HTTP/1.1" 304 0
+"GET / HTTP/1.1" 200 10776
+"GET / HTTP/1.1" 200 10776
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 2971
+"POST /api/audit HTTP/1.1" 200 1637
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 10776
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 2971
+"GET / HTTP/1.1" 200 5344
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 2971
+"GET /static/style.css HTTP/1.1" 200 9779
+"GET /static/script.js HTTP/1.1" 200 21302
+"POST /api/audit HTTP/1.1" 200 1636
+"POST /api/audit HTTP/1.1" 200 2422
+"POST /api/audit HTTP/1.1" 200 2154
+"GET / HTTP/1.1" 200 5344
+"GET /static/style.css HTTP/1.1" 304 0
+"GET /static/script.js HTTP/1.1" 304 0
+"POST /api/audit HTTP/1.1" 200 2276

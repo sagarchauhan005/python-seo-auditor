@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEO Audit Tool</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <h1><i class="fas fa-search"></i> SEO Audit Tool</h1>
+                <p>Comprehensive SEO analysis for your website</p>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="audit-form-container">
+                <form id="auditForm" class="audit-form">
+                    <div class="form-group">
+                        <label for="urlInput">Website URL</label>
+                        <div class="input-group">
+                            <input
+                                type="url"
+                                id="urlInput"
+                                name="url"
+                                placeholder="https://example.com"
+                                required
+                                class="url-input"
+                            >
+                            <button type="submit" class="submit-btn" id="submitBtn">
+                                <i class="fas fa-search"></i>
+                                <span>Analyze SEO</span>
+                            </button>
+                        </div>
+                        <div class="error-message" id="errorMessage"></div>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Loading State -->
+            <div class="loading-container" id="loadingContainer" style="display: none;">
+                <div class="loading-spinner">
+                    <i class="fas fa-spinner fa-spin"></i>
+                </div>
+                <div class="loading-text">
+                    <h3>Analyzing SEO...</h3>
+                    <p id="loadingStatus">Fetching page content...</p>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+            </div>
+
+            <!-- Results Container -->
+            <div class="results-container" id="resultsContainer" style="display: none;">
+                <!-- Overall Score -->
+                <div class="score-section">
+                    <div class="overall-score">
+                        <div class="score-circle" id="overallScoreCircle">
+                            <span class="score-value" id="overallScoreValue">0</span>
+                            <span class="score-total">/12</span>
+                            <span class="score-label">SEO Score</span>
+                        </div>
+                        <div class="score-info">
+                            <h2 id="auditedUrl"></h2>
+                            <p class="audit-timestamp" id="auditTimestamp"></p>
+                            <div class="score-breakdown">
+                                <span class="passed-count" id="passedCount">0 passed</span>
+                                <span class="failed-count" id="failedCount">0 failed</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SEO Checks Grid -->
+                <div class="seo-checks-section">
+                    <h3><i class="fas fa-list-check"></i> SEO Analysis Results</h3>
+                    <div class="checks-grid" id="checksGrid">
+                        <!-- SEO checks will be populated by JavaScript -->
+                    </div>
+                </div>
+
+                <!-- Failed Checks Details -->
+                <div class="failed-checks-section" id="failedChecksSection" style="display: none;">
+                    <h3><i class="fas fa-exclamation-triangle"></i> Issues to Fix</h3>
+                    <div class="failed-checks-list" id="failedChecksList">
+                        <!-- Failed checks details will be populated by JavaScript -->
+                    </div>
+                </div>
+
+                <!-- Page Statistics -->
+                <div class="page-stats-section">
+                    <h3><i class="fas fa-chart-bar"></i> Page Statistics</h3>
+                    <div class="stats-grid" id="statsGrid">
+                        <!-- Page stats will be populated by JavaScript -->
+                    </div>
+                </div>
+
+                <!-- Export Section -->
+                <div class="export-section">
+                    <button class="export-btn" id="exportBtn">
+                        <i class="fas fa-download"></i>
+                        Export Report
+                    </button>
+                    <button class="new-audit-btn" id="newAuditBtn">
+                        <i class="fas fa-plus"></i>
+                        New Audit
+                    </button>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2025 SEO Audit Tool. Analyze 12 essential SEO factors.</p>
+        </footer>
+    </div>
+
+    <script type="text/javascript" src="{% static 'script.js' %}" defer></script>
+</body>
+</html>
